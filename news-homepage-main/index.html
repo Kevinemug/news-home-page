@@ -1,97 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | News homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  <script src="https://cdn.tailwindcss.com"></script>  
-</head>
-<body>
-  <!-- <nav  class="flex justify-between">
-    <div>
-        <img src="/news-homepage-main/assets/images/logo.svg" alt="">
-    </div>
-    <div class="flex gap-[40px]">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body >
+    <header class="flex justify-between  w-[80%] m-auto py-[10px]">
+      <div><img src="./assets/images/logo.svg" alt="" /></div>
+      <div class="flex gap-x-9">
         <div>Home</div>
-        <div>New</div>
-        <div>Popular</div>
-        <div>Trending</div>
-        <div>Categories</div>
-    </div>
-       </nav>  -->
-    
+        <div>Brand</div>
+        <div>Cloth</div>
+        <div>Whatever</div>
+        <div>Number</div>
+      </div>
+    </header>
+    <main class="w-[80%] grid grid-cols-3 grid-rows-2 m-auto gap-4">
+      <section class="bg-pink-500 col-start-1 col-end-3">
+        <img src="./assets/images/image-web-3-desktop.jpg" alt="" />
+      </section>
+      <section class=" bg-[#00001a] h-full col-start-3  row-start-1 row-end-3 row-span-2 px-5 py-5">
+     <div class="flex flex-col gap-5">
+       <div class="text-3xl text-[#e5a85a] ">New</div>
+       <div class="text-[#f6f7f6] text-2xl">Hydrogen vs electric cars</div>
+       <div class="text-[#8d8ea4]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, ex!
+      </div>
+      <hr class="py-2">
+     </div>
 
+     <div class="flex flex-col gap-5 ">
+       <div class="text-[#f6f7f6] text-2xl">Hydrogen vs electric cars</div>
+       <div class="text-[#8d8ea4]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, ex!
+      </div>
+      <hr class="py-2">
+     </div>
 
-
-<main class="flex gap-[390px] flex-col lg:gap-[30px] lg:flex-row m-auto w-[90%]">
-
-<div class="  h-[300px]  lg:w-[1200px] md:h-[700px]">
-  <img src="./assets/images/image-web-3-desktop.jpg" alt="" class=" lg:w-[1000px] h-[300px] ">
-<div class="flex flex-col  lg:flex-row  ">
-  <div>
-    <p class="py-[20px] font-black text-[40px]">The bright future of web 3.0</p>
-  </div>
-  <div class="lg:mt-[20px] lg:ml-[20px] ">
-    <p >Lorem ipsum dolor
-       sit amet consectetur adipisicing elit. Nihil nisi fuga
-       blanditiis doloribus laudantium placeat obcaecati quos quasi nam. Quaerat.</p>
-    <button class="my-[20px] border-2 border-green text-white h-[60px]  text-[20px] bg-[#f15d51] px-[40px]">R E A D M O R E</button>
-  </div>
-</div>
-</div>
-<div class="bg-black   md:w-[400px] md:h-[600px] lg:w-[600px]">
-  <div class=" flex px-[10px] flex-col gap-[20px]">
-    <p class=" text-[#f5a94d] text-3xl font-black">New</p>
-    <p class=" text-white text-2xl font-black">Hydrogen vs Electric cars</p>
-    <p class="text-white text-xl text-[#97969a] ">will hydrogen-fueld cars ever catch</p>
-  <hr>
-  </div> 
-  <div class=" flex px-[20px] flex-col gap-[20px] py-[20px]">
-    <p class=" text-[#f5a94d] text-3xl font-black">New</p>
-    <p class=" text-white text-2xl font-black">Hydrogen vs Electric cars</p>
-    <p class="text-white text-xl text-[#97969a] ">will hydrogen-fueld cars ever catch</p>
-  <hr>
-  </div> 
-  <div class=" flex px-[20px] flex-col gap-[20px] py-[20px]">
-    <p class=" text-[#f5a94d] text-3xl font-black">New</p>
-    <p class=" text-white text-2xl font-black">Hydrogen vs Electric cars</p>
-    <p class="text-white text-xl text-[#97969a] ">will hydrogen-fueld cars ever catch</p>
-  <hr>
-  </div> 
-
-</div>
-
-
-</main>
+     <div class="flex flex-col gap-5">
+       <div class="text-[#f6f7f6] text-2xl">Hydrogen vs electric cars</div>
+       <div class="text-[#8d8ea4]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, ex!
+      </div>
+      <hr class="py-2">
+     </div>
 
 
 
 
+      </section>
+      <section >
+        <div class="text-7xl text-[#090820]">
+          THE BRIGHT FUTURE OF WEB 3.0 ?
+        </div>
+      </section>
+      <section class="flex flex-col gap-8" >
+        <div class="text-3xl">Lorem ipsum dolor sit Lorem ipsum dolor sit amet. amet consectetur adipisicing elit. Voluptate aperiam optio officiis at maiores dignissimo</div>
+<button class="bg-[#ed5d4f] text-[#fff2ec]  py-3 px-3">R E A D M O R E</button>    
+  </section>
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-</body>
+    <footer class="grid grid-cols-3 gap-y-4 w-[80%] m-auto mt-4 mt-[30px] pb-10">
+      <div class="grid grid-cols-2 gap-x-6">
+        <div>
+          <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+        </div>
+        <div>
+          <div>01</div>
+          <div class="text-sm   ">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, praesentium reprehenderit eligendi unde ratione commodi necessitatibus labore. Obcaecati, incidunt consequatur?          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div>
+          <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+        </div>
+        <div>
+          <div>01</div>
+          <div>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, praesentium reprehenderit eligendi unde ratione commodi necessitatibus labore. Obcaecati, incidunt consequatur?          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div>
+          <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+        </div>
+        <div>
+          <div>01</div>
+          <div>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, praesentium reprehenderit eligendi unde ratione commodi necessitatibus labore. Obcaecati, incidunt consequatur?          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
